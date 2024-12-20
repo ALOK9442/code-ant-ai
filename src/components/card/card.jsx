@@ -8,7 +8,7 @@ export default function Card({ repo, languageColors }) {
   const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
 
   return (
-    <div className="p-4 mb-2 border rounded shadow-sm hover:bg-gray-100">
+    <div className="p-4 border rounded shadow-sm hover:bg-gray-100">
       <div className="flex justify-between items-center">
         <div className="flex items-center gap-2">
           <h2 className="text-xl font-medium">{repo.name}</h2>

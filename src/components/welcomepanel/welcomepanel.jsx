@@ -1,5 +1,5 @@
 import Logo from "../../assets/Subtract.png";
-import BottomLogo from "../../assets/Logo.png";
+import BottomLogo from "../../assets/logo.png";
 
 export default function WelcomePanel() {
   const StatsItem = ({ value, label }) => (
