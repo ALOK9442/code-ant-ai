@@ -16,7 +16,7 @@ export default function Menu({
 }) {
   return (
     <div
-      className="fixed top-16 gap-4 px-4 py-3 font-sans left-0 w-full h-fit bg-white z-40 transition-all duration-300 ease-in-out transform sidebar"
+      className="fixed top-16 gap-3 border-[#E9EAEB] flex flex-col px-4 py-3 font-sans left-0 w-full h-fit bg-white z-40 transition-all duration-300 ease-in-out transform sidebar"
       style={{
         transform: isMenuOpen ? "translateY(0)" : "translateY(-100%)",
       }}
@@ -30,7 +30,7 @@ export default function Menu({
           className="w-[13.51px] h-[7.24px] color-[#181D27]"
         />
       </div>
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col">
         {NavigationLinks.map((link) => (
           <SidebarButton
             key={link.id}

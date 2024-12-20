@@ -3,8 +3,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const SidebarButton = ({ icon, label, active, onClick }) => {
   return (
     <div
-      className={`p-2 w-full mx-auto flex items-center text-base font-normal gap-2 rounded-md cursor-pointer ${
-        active ? "bg-[#1570EF] text-white" : "hover:bg-[#1570EF]"
+      className={`p-2 w-full mx-auto flex items-center text-base font-semibold gap-2 rounded-md cursor-pointer ${
+        active ? "md:bg-[#1570EF] md:text-white" : "md:hover:bg-[#1570EF]"
       }`}
       onClick={onClick}
     >
