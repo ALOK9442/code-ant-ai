@@ -7,7 +7,10 @@ import Bitbucket from "../../assets/bucket.png";
 import Gitlab from "../../assets/gitlab.png";
 import Logo from "../../assets/Subtract.png";
 import { useNavigate } from "react-router-dom";
-import { SaasLoginTypes, SelfHostedTypes } from "../../utils/loginbuttondata/loginbuttondata";
+import {
+  SaasLoginTypes,
+  SelfHostedTypes,
+} from "../../utils/loginbuttondata/loginbuttondata";
 
 export default function Login() {
   const [activeTab, setActiveTab] = useState("saas");
@@ -55,7 +58,9 @@ export default function Login() {
         <Button
           onClick={() => setActiveTab("saas")}
           className={`flex-1 text-xl font-semibold py-3 rounded-lg text-center transition-all duration-300 ${
-            activeTab === "saas" ? "bg-[#1570EF] text-white" : "bg-gray-100 text-[#414651]"
+            activeTab === "saas"
+              ? "bg-[#1570EF] text-white"
+              : "bg-gray-100 text-[#414651]"
           }`}
         >
           SAAS
@@ -63,7 +68,9 @@ export default function Login() {
         <Button
           onClick={() => setActiveTab("selfhosted")}
           className={`flex-1 text-xl font-semibold py-3 rounded-lg text-center transition-all duration-300 ${
-            activeTab === "selfhosted" ? "bg-[#1570EF] text-white" : "bg-gray-100 text-[#414651]"
+            activeTab === "selfhosted"
+              ? "bg-[#1570EF] text-white"
+              : "bg-gray-100 text-[#414651]"
           }`}
         >
           Self Hosted

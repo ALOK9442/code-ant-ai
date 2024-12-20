@@ -2,7 +2,6 @@ import Logo from "../../assets/Subtract.png";
 import BottomLogo from "../../assets/Logo.png";
 
 export default function WelcomePanel() {
-  
   const StatsItem = ({ value, label }) => (
     <div>
       <div className="text-xl font-semibold">{value}</div>
@@ -13,7 +12,9 @@ export default function WelcomePanel() {
     <div className="bg-white rounded-2xl w-[400px] gap-6 flex flex-col">
       <div className="flex items-center gap-3">
         <img src={Logo} alt="CodeAnt Logo" className="w-8 h-8" />
-        <span className="font-bold text-[#081735]">AI to Detect & Autofix Bad Code</span>
+        <span className="font-bold text-[#081735]">
+          AI to Detect & Autofix Bad Code
+        </span>
       </div>
       <div className="grid grid-cols-3 gap-12 text-center">
         <StatsItem value="30+" label="Language Support" />

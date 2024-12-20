@@ -2,8 +2,6 @@ import React, { useEffect, useState, useCallback } from "react";
 import Sidebar from "../../components/sidebar/sidebar";
 import RepositoriesList from "../../components/repositorieslist/repositorieslist";
 import SearchInputBox from "../../components/searchinputbox/searchinputbox";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAdd, faSync } from "@fortawesome/free-solid-svg-icons";
 import RepositoryContent from "../../components/repositorycontent/repositorycontent";
 
 export default function Dashboard() {
@@ -11,7 +9,6 @@ export default function Dashboard() {
   const [repos, setRepos] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [activeLink, setActiveLink] = useState(1);
-  const [page, setPage] = useState(1);
   const [totalCount, setTotalCount] = useState(0);
 
   const debounce = (func, delay) => {
